@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/icon.svg" type="image/x-icon">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="output.css">
+	<title>Transportation</title>
+</head>
+<body class="bg-white dark:bg-[#203148]">
+	<header class="text-black dark:text-white flex justify-between items-center px-[16px] h-[56px] border-b fixed w-full z-50 bg-white dark:bg-[#203148] border-gray-300">
+		<div id="header-block_1" class="flex items-center">
+			<a href="index.html" id="logo" class="flex items-center cursor-pointer">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-blue-600 pt-1 ">
+					<path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z" clip-rule="evenodd" />
+				</svg>
+				<h1 class="text-3xl font-bold ml-2">PP APP</h1>
+			</a>
+
+			<div id="acc-name" class="ml-6 bg-gray-200 rounded-md p-2 w-72 text-center">
+				<h2 class="uppercase dark:text-gray-600">CITY_344</h2>
+			</div>
+
+			<h3 class="ml-2 opacity-70">Version: 2.0.26</h3>
+		</div>
+
+		<div id="header-block_2" class="flex items-center gap-4">
+			<a href="profile.html" id="user-logo" class="flex items-center gap-4 cursor-pointer hover:text-teal-400 transition-all duration-200 ease-in-out ">
+				<h1>PP_344</h1>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+				</svg>				
+			</a>
+
+			<div id="bar" class="w-[1px] h-8 bg-gray-500 ml-[3px] mr-[4px]"></div>
+
+			<div id="header-buttons" class="flex items-center gap-2">
+
+				<div id="toggle-theme" class="flex items-center cursor-pointer hover:opacity-80 active">
+					<div id="toggle-bg-theme" class="bg-gray-400 w-11 h-5 py-[2px] rounded-full relative flex justify-center items dark:bg-teal-400">
+						<div id="toggle-circle-theme" class="absolute w-4 h-4 p-[2px] bg-white rounded-full transform -translate-x-2.5 transition-all duration-200 ease-in-out">
+							<svg id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 dark:text-black">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer rounded-md hover:bg-gray-200 dark:hover:bg-gray-400 hover:text-teal-500 dark:hover:text-teal-600 hover:p-1 transition-all duration-200 ease-in-out">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 cursor-pointer rounded-md hover:bg-gray-200 dark:hover:bg-gray-400
+				dark:hover:text-teal-600 hover:text-teal-500 hover:p-1 transition-all duration-200 ease-in-out">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+				</svg>
+				
+			</div>
+		</div>
+	</header> <!--header-->
+
+	<section id="main"> 
+		<aside id="default-sidebar" class="fixed top-[56px] left-0 z-40 w-64 transition-all duration-200 ease-out h-screen" aria-label="Sidebar">
+			<div class="h-full flex flex-col px-4 pt-4 overflow-y-hidden bg-[#203148] dark:bg-gray-800">
+				<ul class="space-y-2 font-medium">
+
+					<li id="listItem">
+						<a href="order.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white group hover:bg-[#1d2d41] dark:hover:bg-gray-700 group">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+							</svg>
+						
+							<span class="ms-3 text-white mr-6">Issuing orders</span>
+							<div id="order" class="rounded-full w-6 h-6 bg-red-600 flex justify-center items-center text-white">1</div>
+						</a>
+					</li>
+
+					<div class="w-[224px] h-[1px] bg-gray-300 opacity-70 rounded-md "></div>
+
+					<li id="listItem" class="bg-teal-700 rounded-md hover:bg-teal-900 transition-all duration-200 ease-in-out">
+						<a href="#" class="flex items-center p-2 text-gray-900 py-2 rounded-lg dark:text-white ">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+							</svg>
+							
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">Transportation</span>
+						</a>
+					</li>
+
+					<li id="listItem">
+						<a href="receiving.html#receive" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#1d2d41] dark:hover:bg-gray-700 group">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+							</svg>
+							
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">Receiving</span>
+						</a>
+					</li>
+
+					<li id="listItem">
+						<a href="outbound.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#1d2d41] dark:hover:bg-gray-700 group">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m0-3l-3-3m0 0l-3 3m3-3v11.25m6-2.25h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75" />
+							</svg>
+							
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">Outbound</span>
+						</a>
+					</li>
+
+					<div class="w-[224px] h-[1px] bg-gray-300 opacity-70 rounded-md "></div>
+
+					<li id="popover-title" data-popover-target="popover-right" data-popover-placement="right" type="button" class="flex justify-between items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#1d2d41] dark:hover:bg-gray-700 group cursor-pointer">
+						<div class="flex items-center">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+							</svg>
+							<span class="popover-title flex-1 ms-3 whitespace-nowrap text-white">Returnings</span>
+						</div>
+
+						<div data-popover id="popover-right" role="tooltip" class="absolute z-10 invisible inline-block w-52 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 cursor-default">
+								
+							<div class="px-1 py-1">
+								<a href="ticket-returns.html" class="my-3 text-sm block hover:bg-slate-300 dark:hover:text-gray-700 rounded-md p-1 text-center">Returns from customers</a>
+							</div>
+						</div>
+
+						<div id="chevron-popover">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+							</svg>
+						</div>
+					</li>
+
+					<div class="w-[224px] h-[1px] bg-gray-300 opacity-70 rounded-md "></div>
+
+					<li id="listItem">
+						<a href="reports.html#remains" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#1d2d41] dark:hover:bg-gray-700 group">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+							</svg>
+						
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">Reports</span>
+						</a>
+					</li>
+
+					<li id="listItem">
+						<a href="search.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#1d2d41] dark:hover:bg-gray-700 group">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+							</svg>
+						
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">Search order</span>
+						</a>
+					</li>
+
+					<li id="popover-title" data-popover-target="popover-right_2" data-popover-placement="right" type="button" class="flex justify-between items-center p-2 text-gray-900 rounded-lg hover:bg-[#1d2d41] dark:text-white dark:hover:bg-gray-700 group cursor-pointer">
+
+						<div class="flex items-center">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+							</svg>
+
+							<span class="flex-1 ms-3 whitespace-nowrap text-white">More</span>
+
+							<div data-popover id="popover-right_2" role="tooltip" class="absolute z-10 invisible inline-block w-52 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 cursor-default">
+								<div class="px-1 py-1">
+									<a href="address_storage.html" class="my-3 block hover:bg-slate-300 rounded-md p-1 text-center dark:hover:text-gray-700">Address storage</a>
+									<a href="news.html" class="my-3 block hover:bg-slate-300 rounded-md p-1 text-center dark:hover:text-gray-700">News</a>
+									<a href="learning.html" class="my-3 block hover:bg-slate-300 rounded-md p-1 text-center dark:hover:text-gray-700">Learning</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="chevron-popover">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3 text-white">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+							</svg>
+						</div>
+					</li>
+
+					<li id="listBtn" class="cursor-pointer flex justify-center transform translate-y-32">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+						</svg>
+					</li>
+				</ul>
+			</div>
+		</aside> <!--SIDEBAR-->
+	
+		<div id="content" class="ml-64 relative transition-all duration-200 ease-in-out pt-12 pb-20">
+
+			<button id="openSupport" data-popover-target="popover-left" data-popover-placement="left" type="button" class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800 fixed z-50 bottom-10 right-10">
+				<svg id="chat" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+				</svg>				
+			</button>
+
+			<div id="supportModal" class="fixed bottom-32 right-10 hidden z-50 w-96 p-4 bg-gray-100 dark:bg-gray-800 border border-teal-200 rounded-md">
+
+				<h1 class="text-3xl text-black dark:text-white font-bold mb-3">Support</h1>
+				<p class="opacity-70 mb-3">We respond within one day, but usually faster. Read <a class="text-teal-600 hover:text-teal-700" href="#">the instructions</a>. Perhaps the problem has already been described.</p>
+
+				<div class="flex relative items-center gap-2 after:content-[''] after:w-full after:h-[2px] after:bg-gray-300 after:absolute after:bottom-0 after:rounded-md">
+					<h2 class="cursor-pointer relative after:content-[''] after:w-full after:h-[2px] after:bg-teal-700 after:absolute after:bottom-0 after:rounded-md after:left-0 after:z-30">All</h2>
+					<h2 class="opacity-75 cursor-pointer relative after:content-[''] after:w-0 after:h-[2px] after:bg-teal-700 after:absolute after:bottom-0 after:rounded-md after:left-0">Mine</h2>
+					<h2 class="opacity-75 cursor-pointer relative after:content-[''] after:w-0 after:h-[2px] after:bg-teal-700 after:absolute after:bottom-0 after:rounded-md after:left-0 after:z-30">Closed tickets</h2>
+				</div>
+				<div class="flex items-center justify-center py-20 gap-1">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-yellow-500">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+					</svg>
+					<p class="text-xl">You don't have an open ticket!</p>					
+				</div>
+
+				<div>
+					<button class="bg-teal-700 hover:opacity-70 transition-all duration-200 ease-in-out text-white px-4 py-4 w-full rounded-md">
+						Open a ticket
+					</button>
+				</div>
+
+			</div>
+
+			<div data-popover id="popover-left" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+				<div class="px-2 py-4">
+					<p class="text-lg font-bold">Contact support</p>
+				</div>
+				<div data-popper-arrow></div>
+			</div>
+			
+			<div class="p-4">
+				<div class="grid grid-cols-1 gap-4 mb-4">
+						
+					<h1 class="text-3xl text-black font-bold dark:text-white mb-6">
+						Transportation
+					</h1>
+
+					<div class="flex gap-2 items-center font-bold text-teal-700 dark:text-teal-400">
+						<button>Update counter</button>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+						</svg>
+					</div>
+
+					<div class="flex gap-8 mb-8">
+						<div id="card-1" class="border-2 rounded-md p-5 w-72 shadow-md text-black dark:text-white">
+							<div class="opacity-70 mb-3">
+								<h2>Today will arrive</h2>
+							</div>
+							<span>424 items</span>
+							<div class="opacity-70 my-3">
+								<h2>Today received</h2>
+							</div>
+							<span>0 items</span>
+						</div>
+
+						<div id="card-2" class="border-2 rounded-md p-5 w-72 shadow-md text-black dark:text-white">
+							<div class="opacity-70 mb-3">
+								<h2>Tomorrow will arrive</h2>
+							</div>
+
+							<span>166 items</span>
+						</div>
+					</div> <!--Card-->
+
+					<div class="flex gap-6">
+						<form class="w-[556px]">   
+							<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+							<div class="relative">
+								<div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+									<svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+									</svg>
+								</div>
+								<input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 hover:border-gray-300 rounded-lg bg-gray-50 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-teal-500 dark:focus:border-teal-500" placeholder="Car number, driver's name, place of departure, counterparty" required>
+								<button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-teal-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">Search</button>
+							</div>
+						</form>
+
+						<div class="flex items-center text-black dark:text-white gap-2">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+							</svg>
+							
+							<span>Scan the seller's security code</span>
+						</div>
+					</div> <!--Search-->
+
+					<div class="relative overflow-x-auto">
+						<table class="table w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+								<thead class="table-header-group text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+										<tr class="table-row">
+												<th scope="col" class="px-6 py-3 table-cell w-3">
+														Status
+												</th>
+												<th scope="col" class="px-6 py-3">
+														Arrival date
+												</th>
+												<th scope="col" class="px-6 py-3">
+														Transportation number
+												</th>
+												<th scope="col" class="px-6 py-3">
+														Items actually
+												</th>
+												<th scope="col" class="px-6 py-3">
+													Items systematically
+												</th>
+												<th scope="col" class="px-6 py-3">
+													Items
+												</th>
+												<th scope="col" class="px-6 py-3">
+													Place of departure
+												</th>
+
+												<th scope="col" class="px-6 py-3">
+												</th>
+										</tr>
+								</thead>
+								<tbody>
+										<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50">
+												<th scope="row" class="px-6 py-6 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-2">
+														<div class="w-3 h-3 bg-gray-500 rounded-full border-2 "></div>
+														<span class="opacity-70">Sent</span>
+												</th>
+												<td class="px-6 py-4">
+													November 27
+												</td>
+												<td class="px-6 py-4">
+														10888508
+												</td>
+												<td class="px-6 py-4">
+
+												</td>
+
+												<td class="px-6 py-4">
+													0/1
+												</td>
+												<td class="px-6 py-4">
+													0/1
+												</td>
+												<td class="px-6 py-4">
+													PRIKUPILKA/130819/1Komendan-4h-NEW
+												</td>
+
+												<td class="px-6 py-4">
+													<button class="bg-teal-700 hover:bg-teal-500 transition-all duration-200 ease-in-out p-4 rounded-md text-white font-bold">Accept</button>
+												</td>
+										</tr>
+										<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50">
+											<th scope="row" class="px-6 py-6 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-2">
+													<div class="w-3 h-3 bg-gray-500 rounded-full border-2 "></div>
+													<span class="opacity-70">Sent</span>
+											</th>
+											<td class="px-6 py-4">
+												November 27
+											</td>
+											<td class="px-6 py-4">
+													33039124
+											</td>
+											<td class="px-6 py-4">
+
+											</td>
+
+											<td class="px-6 py-4">
+												0/1
+											</td>
+											<td class="px-6 py-4">
+												0/61
+											</td>
+											<td class="px-6 py-4">
+												SPB_Hub_Pargolovo
+											</td>
+
+											<td class="px-6 py-4">
+												<button class="bg-teal-700 hover:bg-teal-500 transition-all duration-200 ease-in-out p-4 rounded-md text-white font-bold">Accept</button>
+											</td>
+									</tr>
+
+								</tbody>
+						</table>
+
+
+				</div>
+					
+					
+
+					
+				</div>
+			</div>
+
+		</div> <!--MAIN CONTENT-->
+	</section>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
